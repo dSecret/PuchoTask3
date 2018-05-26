@@ -95,10 +95,10 @@ exports.LabelDetection=()=>{
 		    });
 		  })
 		  .then(()=>{
-		  		res(foo)
+		  		res({'foo':foo})
 		  })
 		  .catch(err => {
-		    rej([])
+		    rej({'foo':[]})
 		  });		
 	})
 
@@ -156,10 +156,10 @@ exports.ShotChangeDetection=()=>{
 		    }
 		  })
 		  .then(()=>{
-		  		res(foo)
+		  		res({'foo':foo})
 		  })
 		  .catch(err => {
-		    	rej([])
+		    	rej({'foo':[]})
 		  });
 	})
 
@@ -207,11 +207,11 @@ exports.ExplicitContentDetection=()=>{
 	    });
 	  })
 	  .then(()=>{
-	  		res(foo)
+	  		res({'foo':foo})
 	  })
 	  .catch(err => {
 	    // console.error('ERROR:', err);
-	    	rej(foo)
+	    	rej({'foo':[]})
 	  });		
 	})
 	

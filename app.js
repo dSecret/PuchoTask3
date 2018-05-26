@@ -89,6 +89,7 @@ app.post('/detectRek',upload.single("uploads"),(req,res)=>{
     console.log(filename)
     Rek.DetectLabelsTest('./uploads/'+filename)
         .then((data)=>{
+            console.log(data)
             res.send(data)
             // res.end()
         })
