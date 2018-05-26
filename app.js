@@ -13,9 +13,7 @@ const  fs= require('fs')
 const passportSetup = require('./config/passport-setup')
 const keys = require('./config/keys')
 //func using vision api 
-const Label = require("./models/labelDetection")
-const Shot = require("./models/shotChange")
-const EC = require("./models/ecDetection.js")
+
 const GCV = require("./models/gcvision.js")
 
 // gc-storage
