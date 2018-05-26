@@ -13,7 +13,9 @@ const  fs= require('fs')
 const passportSetup = require('./config/passport-setup')
 const keys = require('./config/keys')
 //func using vision api 
-
+// const Label = require("./models/labelDetection")
+// const Shot = require("./models/shotChange")
+// const EC = require("./models/ecDetection.js")
 const GCV = require("./models/gcvision.js")
 
 // gc-storage
@@ -110,7 +112,7 @@ app.get('/auth/google', passport.authenticate('google', {
 // // callback route for google to redirect to
 // // hand control to passport to use code to grab profile info
 app.get('/auth/google/redirect', passport.authenticate('google'), (req, res) => {
-    res.redirect('/#/profile')
+    res.redirect('/')
 })
 // // auth logout
 app.post('/logout', (req, res) => {
