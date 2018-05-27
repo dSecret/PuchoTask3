@@ -122,6 +122,6 @@ app.post('/logout', (req, res) => {
     res.end()
 })
 // app is listening for requests at port 3000
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log('app now listening for requests on port 3000')
 })

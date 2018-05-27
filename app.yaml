@@ -12,6 +12,5 @@ resources:
   memory_gb: 0.5
   disk_size_gb: 10
 env_variables:
-  GOOGLE_APPLICATION_CREDENTIALS: "/My Project-97e210279755.json"
   AWS_ACCESS_KEY_ID: "AKIAJV7M56SABUQRVN5Q"
   AWS_SECRET_ACCESS_KEY: "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"
